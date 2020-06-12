@@ -1,16 +1,29 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 11 11:10:00 2020
+Take two lists, say for example these two:
 
-@author: ms101
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+and write a program that returns a list that contains only the elements that 
+are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
+
+Extras:
+
+Randomly generate two lists to test this
+Write this in one line of Python
 """
+import random
 
+a = random.sample(range(25),random.randint(5, 20))
+b = random.sample(range(25),random.randint(5, 20))
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+#old lists for base exercise
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89] 
+#b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 c = list(set(a) & set(b))
 
+#checking the content of all lists
 print(a)
 print(b)
 print(c)

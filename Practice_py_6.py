@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 11 11:15:17 2020
-
-@author: ms101
+Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
 """
 
-
+# get user input
 word = input("Please give a word to check if it is a palindrome: ").lower()
 print(word)
-if word == word[::-1]:
+if word == word[::-1]: #check if string and reversed string are equal
     print("This is a palindrome!")
 else: 
     print("Not a palindrome")
