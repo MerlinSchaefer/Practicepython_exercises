@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+"""
+Use the BeautifulSoup and requests Python packages to print out a list of all 
+the article titles on the New York Times homepage.
+
+This doesn't work anymore as the html structure and classes have changed. They NY Times has it's own API now.
+"""
